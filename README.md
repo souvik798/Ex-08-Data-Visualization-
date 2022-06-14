@@ -18,6 +18,7 @@ Apply data visualization techniques to identify the patterns of the data.
 
 
 # CODE :
+
 ```
 DEVELOPED BY: SOUVIK KUNDU
 REGISTER NUMBER: 212221230105
@@ -29,12 +30,15 @@ df.head()
 
 ```
 ### Data Visualization using Seaborn:
+
 ```
 import seaborn as sns
 from matplotlib import pyplot as plt
 
 ```
+
 ## 1.Line plot:
+
 ```
 plt.figure(figsize=(8,5))
 sns.lineplot(x="Segment",y="Region",data=df,marker='o')
@@ -43,6 +47,7 @@ sns.lineplot(x='Ship Mode',y='Category', hue ="Segment",data=df)
 sns.lineplot(x="Category",y="Sales",data=df,marker='o')
 
 ```
+
 ### 2.Scatterplot:
 
 ````
@@ -54,6 +59,7 @@ sns.scatterplot(x="Region",y="Sales",data=df)
 plt.xticks(rotation = 90)
 
 ```
+
 ## 3.Boxplot:
 
 ````
@@ -105,7 +111,9 @@ sns.histplot(data=df,x ='Ship Mode',hue='Sub-Category')
 sns.kdeplot(x="Profit", data = df,hue='Category')
 
 ````
+
 ## Data Visualization Using MatPlotlib:
+
 
 ### 1.Plot:
 
@@ -114,6 +122,7 @@ plt.plot(df['Category'], df['Sales'])
 plt.show()
 
 ```
+
 ## 2.Heatmap:
 
 ````
@@ -140,6 +149,7 @@ plt.pie(df3["Profit"],colors = colors,labels=labels, autopct = '%0.0f%%')
 plt.show()
 
 ````
+
 ## 4.Histogram:
 
 ````
@@ -147,6 +157,7 @@ plt.hist(df["Sub-Category"],facecolor="peru",edgecolor="blue",bins=10)
 plt.show()
 
 ````
+
 ## 5.Bargraph:
 
 ````
@@ -155,6 +166,7 @@ plt.bar(df.index,df['Category'])
 plt.show()
 
 ````
+
 ## 6.Scatterplot:
 
 ````
@@ -163,15 +175,19 @@ plt.scatter(df["Region"],df["Profit"], c ="blue")
 plt.show()
 
 ````
+
 ## 7.Boxplot:
 
 ````
+
 plt.boxplot(x="Sales",data=df)
 plt.show()
 
 ````
 
 # OUPUT:
+
+```
 
 ## Read the Dataframe:
 ![git logo](./1.jpg)
@@ -245,6 +261,8 @@ Scatterplot(Region):
 BoxPlot(Sales):
 
 ![git logo](./17.jpg)
+
+```
 
 ### RESULT:
 
